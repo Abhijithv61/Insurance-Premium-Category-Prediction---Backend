@@ -1,0 +1,18 @@
+## Deploy FastAPI application on AWS EC2
+
+### Instructions: 
+1. create an EC2 instance 
+2. Connect to the EC2 instance 
+3. Run the following commands 
+    a. sudo apt-get update 
+    b. sudo apt-get install -y docker.io 
+    c. sudo systemctl start docker 
+    d. sudo systemctl enable docker 
+    e. sudo usermod -aG docker $USER 
+    f. exit 
+4. Restart a new connection to EC2 instance 
+5. Run the following commands 
+    a. docker pull abhijithvijayababu/insurance-premium-api:latest
+    b. docker run -p 8000:8000 abhijithvijayababu/insurance-premium-api:latest 
+6. change security group settings 
+7. Check the API 
